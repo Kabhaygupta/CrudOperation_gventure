@@ -1,0 +1,42 @@
+﻿
+
+@model CrudOperation_gventure.Models.Products
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<h1>Generate Invoice</h1>
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_Model)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_Model)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Comp_Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Comp_Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+    <a asp-action="InvoiceDwnload">Download Invoice</a>
+</div>
